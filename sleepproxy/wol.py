@@ -17,7 +17,7 @@ def wake(mac):
     "-vw",
     "73",
     "1"], stdout=subprocess.DEVNULL)
-    print("The exit code was: %d" % callfun.returncode)
+    logging.info("Wake WOL - blynk: The exit code was: %d" % callfun.returncode)
 
 if __name__ == '__main__':
     import sys
